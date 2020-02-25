@@ -1,0 +1,129 @@
+<html lang="en" ng-app="app" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <title>Bitcoin Mixer — Bitcoin Tumbler — Bitcoin Blender — CryptoMixer</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=480, user-scalable=no">
+  <link href="2.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://cryptomixer.io/favicon.ico" type="image/x-icon">
+  <link href="1.css" rel="stylesheet">
+  <meta name="description" content="CryptoMixer.io — best bitcoin mixing service! Mix your bitcoin fast and secure!">
+</head>
+<body ng-controller="maintanance" class="ng-scope">
+<!-- trace:src/pages/how.html -->
+<div class="wrapper" ng-hide="maintanance">
+  <div class="section-row">
+    <nav class="navbar navbar-default">
+      <div class="row">
+        <div class="col-md-5">
+          <h4 class="header-quest">
+            <a href="how.html">How does it work? </a>
+          </h4>
+        </div>
+        <div class="col-md-2 logo">
+          <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><span class="green">Crypto</span><span>Mixer</span></a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item__howitworks">
+                <a href="how.html">How does it work</a>
+              </li>
+              <li class="nav-item__why">
+                <a href="why.html">Why should I mix my coins</a>
+              </li>
+              <li>
+                <a href="fees.html">Fees</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="mailto:support@cryptomixer.io">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="section-row section-row__expanded">
+
+  <section id="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">
+            How does it work?
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <img src="https://cryptomixer.io/images/how1.png" class="img-responsive" alt="bitcoin mix service">
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <p>
+            We provide our clients with the ability to mix their coins and attain safety in the process. Once the coins are sent to us, it is jumbled along with a series of other transactions through our mixer which has a reserve of over 2000 coins. Combining this with the countless transactions we have handled in the past makes it virtually impossible to pinpoint the source and endpoint of the coins. Due to the size of our reserve, we are also able to process transactions almost immediately leaving you with no concern of timely delivery of the coin.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center" style="font-size: 33pt;margin: 20pt 0 20pt;">
+            We mark your bitcoins
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <p>
+            A few users often display concern of the fact that we could be sending the coins you send us back, with a fee cut on it. However, this is never the case. We mark the coins sent to us algorithmically and ensure coins sent by one user are never sent back to the same person. We understand the implications behind doing so and shy away from engaging in any activity that puts our users at risk. Liberty, freedom, privacy - we find ourselves to be guardians of the same.
+          </p>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <img src="https://cryptomixer.io/images/how2.png" class="img-responsive" alt="btc tumbler">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </div>
+    <div class="section-row">
+      <footer class="footer">
+        <ul class="nav">
+          <li>
+            <a href="fees.html">Fees</a>
+          </li>
+          <li>
+            <a href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <a href="javascript:zE.activate()">Contacts</a>
+          </li>
+          <li>
+          </li>
+        </ul>
+        <div class="donations">Donations: <a>bc1qd5whsnwddmvj79frz35tsdha505eg8alumc2e2</a></div>
+        <div>Official TOR mirror: <a href="http://cryptomixns23scr.onion/">cryptomixns23scr.onion</a>
+<!--          Language:-->
+<!--          <a href="/ru">ru</a>-->
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="feedbackWidget ng-scope" ng-controller="feedbackWidget">
+    <div ng-show="opened" class="feedbackButton feedbackButton__mail ng-hide" ng-click="mailto()"></div>
+    <div ng-show="opened &amp;&amp; !chatLoading" class="feedbackButton feedbackButton__chat ng-hide" ng-click="openChat()"></div>
+    <div ng-show="chatLoading" class="feedbackButton feedbackButton__loading ng-hide"></div>
+ 
+    <div ng-show="opened" class="feedbackButton feedbackButton__close ng-hide" ng-click="close()"></div>
+  </div>
+
+  <!-- ngIf: maintanance -->
+
+  <script src="/js/build.js?5"></script>
+</body>
